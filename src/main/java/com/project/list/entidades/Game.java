@@ -13,35 +13,33 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String titulo;
-    @Column(name="game_ano")
-    private Integer ano;
+    @Column(name="game_year")
+    private Integer year;
     private String genero;
     private String plataforma;
+    private Double score;
     private String imgUrl;
+    @Column(columnDefinition="TEXT")
     private String descricaoCurta;
+    @Column(columnDefinition="TEXT")
     private String descricaoLonga;
+
+    //Criacao dos metodos
 
     public Game(){
 
     }
 
-    public Game(long id, String titulo, Integer ano, String genero, String plataforma, String imgUrl, String descricaoCurta, String descricaoLonga) {
+    public Game(long id, String titulo, Integer year, String genero, String plataforma, Double score, String imgUrl, String descricaoCurta, String descricaoLonga) {
         this.id = id;
         this.titulo = titulo;
-        this.ano = ano;
+        this.year = year;
         this.genero = genero;
         this.plataforma = plataforma;
+        this.score = score;
         this.imgUrl = imgUrl;
         this.descricaoCurta = descricaoCurta;
         this.descricaoLonga = descricaoLonga;
-    }
-
-    public Integer getAno() {
-        return ano;
-    }
-
-    public void setAno(Integer ano) {
-        this.ano = ano;
     }
 
     public long getId() {
@@ -60,6 +58,14 @@ public class Game {
         this.titulo = titulo;
     }
 
+    public Integer getYear() {
+        return year;
+    }
+
+    public void setYear(Integer year) {
+        this.year = year;
+    }
+
     public String getGenero() {
         return genero;
     }
@@ -74,6 +80,14 @@ public class Game {
 
     public void setPlataforma(String plataforma) {
         this.plataforma = plataforma;
+    }
+
+    public Double getScore() {
+        return score;
+    }
+
+    public void setScore(Double score) {
+        this.score = score;
     }
 
     public String getImgUrl() {
