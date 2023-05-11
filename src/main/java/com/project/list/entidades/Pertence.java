@@ -42,16 +42,13 @@ public class Pertence {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Pertence pertence = (Pertence) o;
-        return Objects.equals(id, pertence.id) && Objects.equals(posicao, pertence.posicao);
+        if (!(o instanceof Pertence pertence)) return false;
+        return Objects.equals(id, pertence.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, posicao);
+        return Objects.hash(id);
     }
-
-
 }
 
