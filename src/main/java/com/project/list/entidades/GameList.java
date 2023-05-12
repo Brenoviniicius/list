@@ -14,7 +14,6 @@ public class GameList {
     private String nome;
 
     public GameList() {}
-
     public GameList(Long id, String nome) {
         this.id = id;
         this.nome = nome;
