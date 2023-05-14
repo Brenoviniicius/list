@@ -6,10 +6,10 @@ import com.project.list.projetctions.GameMinProjection;
 public class GameMinDTO {
 
     private long id;
-    private String titulo;
+    private String title;
     private Integer year;
     private String imgUrl;
-    private String descricaoCurta;
+    private String shortDescription;
 
     //criacao dos metodos
     public GameMinDTO( ) {
@@ -19,26 +19,26 @@ public class GameMinDTO {
     //criacao do metodo princial a partir da exportação da classe Game
     public GameMinDTO(Game entity) {
         id = entity.getId();
-        titulo = entity.getTitulo();
+        title = entity.getTitle();
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
-        descricaoCurta = entity.getDescricaoCurta();
+        shortDescription = entity.getShortDescription();
     }
 
     public GameMinDTO(GameMinProjection projection) {
         id = projection.getId();
-        titulo = projection.getTitulo();
+        title = projection.getTitle();
         year = projection.getYear();
         imgUrl = projection.getImgUrl();
-        descricaoCurta = projection.getDescricaoCurta();
+        shortDescription = projection.getShortDescription();
     }
 
     public long getId() {
         return id;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getTitle() {
+        return title;
     }
 
     public Integer getYear() {
@@ -49,8 +49,8 @@ public class GameMinDTO {
         return imgUrl;
     }
 
-    public String getDescricaoCurta() {
-        return descricaoCurta;
+    public String getShortDescription() {
+        return shortDescription;
     }
 }
 

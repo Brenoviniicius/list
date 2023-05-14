@@ -2,10 +2,10 @@ package com.project.list.projetctions;
 
 public interface GameMinProjection {
     Long getId();
-    String getTitulo();
+    String getTitle();
     Integer getYear();
     String getImgUrl();
-    String getDescricaoCurta();
-    Integer getPosicao();
+    String getShortDescription();
+    Integer getPosition();
 
 }

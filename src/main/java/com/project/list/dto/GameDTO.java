@@ -5,14 +5,14 @@ import org.springframework.beans.BeanUtils;
 
 public class GameDTO {
     private long id;
-    private String titulo;
+    private String title;
     private Integer year;
-    private String genero;
-    private String plataforma;
+    private String genre;
+    private String platforms;
     private Double score;
     private String imgUrl;
-    private String descricaoCurta;
-    private String descricaoLonga;
+    private String shortDescription;
+    private String longDescription;
 
     public GameDTO() {}
 
@@ -29,12 +29,12 @@ public class GameDTO {
         this.id = id;
     }
 
-    public String getTitulo() {
-        return titulo;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public Integer getYear() {
@@ -45,20 +45,20 @@ public class GameDTO {
         this.year = year;
     }
 
-    public String getGenero() {
-        return genero;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setGenero(String genero) {
-        this.genero = genero;
+    public void setGenre(String genre) {
+        this.genre = genre;
     }
 
-    public String getPlataforma() {
-        return plataforma;
+    public String getPlatforms() {
+        return platforms;
     }
 
-    public void setPlataforma(String plataforma) {
-        this.plataforma = plataforma;
+    public void setPlatforms(String platforms) {
+        this.platforms = platforms;
     }
 
     public Double getScore() {
@@ -77,19 +77,19 @@ public class GameDTO {
         this.imgUrl = imgUrl;
     }
 
-    public String getDescricaoCurta() {
-        return descricaoCurta;
+    public String getShortDescription() {
+        return shortDescription;
     }
 
-    public void setDescricaoCurta(String descricaoCurta) {
-        this.descricaoCurta = descricaoCurta;
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
     }
 
-    public String getDescricaoLonga() {
-        return descricaoLonga;
+    public String getLongDescription() {
+        return longDescription;
     }
 
-    public void setDescricaoLonga(String descricaoLonga) {
-        this.descricaoLonga = descricaoLonga;
+    public void setLongDescription(String longDescription) {
+        this.longDescription = longDescription;
     }
 }
